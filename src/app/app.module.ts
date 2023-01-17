@@ -16,6 +16,8 @@ import { VideoModule } from './video/video.module';
 import { ClipComponent } from './clip/clip.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { AngularFireStorageModule } from '@angular/fire/compat/storage'
+import { FormsModule } from '@angular/forms';
+import { OrdersComponent } from './orders/orders.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,7 @@ import { AngularFireStorageModule } from '@angular/fire/compat/storage'
     AboutComponent,
     ClipComponent,
     NotFoundComponent,
+    OrdersComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,7 +38,8 @@ import { AngularFireStorageModule } from '@angular/fire/compat/storage'
     AngularFirestoreModule,
     VideoModule,
     AppRoutingModule,
-    AngularFireStorageModule
+    AngularFireStorageModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

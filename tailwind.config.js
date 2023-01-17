@@ -7,7 +7,13 @@ module.exports = {
     'bg-red-400'
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        'mb-s': '320px',
+        'mb-m': '375px',
+        'mb-l': '425px',
+      },
+    },
   },
   plugins: [],
 }
