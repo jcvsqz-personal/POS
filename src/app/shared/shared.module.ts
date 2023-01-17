@@ -8,7 +8,8 @@ import { InputComponent } from './input/input.component';
 import { ReactiveFormsModule } from '@angular/forms'
 import { NgxMaskModule } from 'ngx-mask';
 import { AlertComponent } from './alert/alert.component';
-import { EventBlockerDirective } from './directives/event-blocker.directive'
+import { EventBlockerDirective } from './directives/event-blocker.directive';
+import { OnlyNumberDirective } from './directives/only-number.directive'
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { EventBlockerDirective } from './directives/event-blocker.directive'
     TabsContainerComponent,
     InputComponent,
     AlertComponent,
-    EventBlockerDirective
+    EventBlockerDirective,
+    OnlyNumberDirective
   ],
   imports: [
     CommonModule,
